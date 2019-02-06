@@ -6,5 +6,6 @@
 ">
   <bean id="pb" class="java.lang.ProcessBuilder">
      <constructor-arg value="ls" />
+     <property name="whatever" value="#{ pb.start() }"/>
   </bean>
 </beans>
